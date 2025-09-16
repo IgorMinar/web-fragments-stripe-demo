@@ -1,0 +1,17 @@
+/**
+ * For more details on how to configure Wrangler, refer to:
+ * https://developers.cloudflare.com/workers/wrangler/configuration/
+ */
+ {
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "web-fragments-stripe-demo-gateway",
+	"main": "src/server/index.ts",
+	"compatibility_date": "2025-05-10",
+	"assets": {
+		"binding": "ASSETS",
+	},
+	"observability": {
+		"enabled": true,
+	},
+	"workers_dev": false
+}

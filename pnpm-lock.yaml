@@ -11,8 +11,8 @@ importers:
   packages/host-app:
     dependencies:
       web-fragments:
-        specifier: ../../../../github/IgorMinar/web-fragments/packages/web-fragments
-        version: link:../../../../github/IgorMinar/web-fragments/packages/web-fragments
+        specifier: https://pkg.pr.new/web-fragments/web-fragments@13c5dbc
+        version: https://pkg.pr.new/web-fragments/web-fragments@13c5dbc
     devDependencies:
       '@cloudflare/vite-plugin':
         specifier: latest
@@ -6031,6 +6031,10 @@ packages:
   wbuf@1.7.3:
     resolution: {integrity: sha512-O84QOnr0icsbFGLS0O3bI5FswxzRr8/gHwWkDlQFskhSPryQXvrTMxjxGP4+iWYoauLoBvfDpkrOauZ+0iZpDA==}
 
+  web-fragments@https://pkg.pr.new/web-fragments/web-fragments@13c5dbc:
+    resolution: {tarball: https://pkg.pr.new/web-fragments/web-fragments@13c5dbc}
+    version: 0.7.2
+
   webidl-conversions@4.0.2:
     resolution: {integrity: sha512-YQ+BmxuTgd6UXZW3+ICGfyqRyHXVlD5GtQr5+qjiNW7bF0cqrzX500HVXPBOvgXb5YnzDd+h0zqyv61KUD7+Sg==}
 
@@ -6095,6 +6099,9 @@ packages:
   websocket-extensions@0.1.4:
     resolution: {integrity: sha512-OqedPIGOfsDlo31UNwYbCFMSaO9m9G/0faIHj5/dZFDMFqPTcx6UwqyOy3COEaEOg/9VsGIpdqn62W5KhoKSpg==}
     engines: {node: '>=0.8.0'}
+
+  wf-htmlrewriter@0.0.13:
+    resolution: {integrity: sha512-ymlCpT94FPRo1eHGOoFgoLQfdJwofayAumP9Bcxl6XBZaoR0Qk1kAIvhsfXY1PADZs1Y6crbujQC8LnaMUi0OQ==}
 
   whatwg-encoding@1.0.5:
     resolution: {integrity: sha512-b5lim54JOPN9HtzvK9HFXvBma/rnfFeqsic0hSpjtDbVxR3dJKLc+KB4V6GgiGOvl7CY/KNh8rxSo9DKQrnUEw==}
@@ -13181,6 +13188,10 @@ snapshots:
     dependencies:
       minimalistic-assert: 1.0.1
 
+  web-fragments@https://pkg.pr.new/web-fragments/web-fragments@13c5dbc:
+    dependencies:
+      htmlrewriter: wf-htmlrewriter@0.0.13
+
   webidl-conversions@4.0.2: {}
 
   webidl-conversions@5.0.0: {}
@@ -13293,6 +13304,8 @@ snapshots:
       websocket-extensions: 0.1.4
 
   websocket-extensions@0.1.4: {}
+
+  wf-htmlrewriter@0.0.13: {}
 
   whatwg-encoding@1.0.5:
     dependencies:

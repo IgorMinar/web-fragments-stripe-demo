@@ -1,0 +1,23 @@
+{
+  "name": "host-app",
+  "description": "Host App",
+  "private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"deploy": "pnpm build && wrangler deploy",
+		"preview": "npm run build && vite preview",
+		"start": "pnpm preview --open",
+		"cf-typegen": "wrangler types"
+	},
+	"devDependencies": {
+		"@cloudflare/vite-plugin": "latest",
+		"typescript": "latest",
+		"vite": "latest",
+		"wrangler": "latest"
+	},
+	"dependencies": {
+		"web-fragments": "https://pkg.pr.new/web-fragments/web-fragments@13c5dbc"
+	}
+}

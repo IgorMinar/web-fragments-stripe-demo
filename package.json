@@ -3,5 +3,8 @@
   "packageManager": "pnpm@10.12.4",
   "author": "Igor Minar<i@igor.dev>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "scripts": {
+    "start": "pnpm --recursive start"
+  }
 }
